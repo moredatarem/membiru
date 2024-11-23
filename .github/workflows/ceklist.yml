@@ -1,15 +1,20 @@
-name: CEKLIST
+name: CEK
 on:   
   push: 
   pull_request: 
   schedule: 
-  - cron: "0 */6 * * *"
+  - cron: '0 */12 * * *'
   
 jobs:
   build:
 
     runs-on: windows-latest
     timeout-minutes: 360
+    strategy: 
+      fail-fast: true
+      matrix: 
+         go: [1.11, 1.12, 1.13, 1.14, 1.15] 
+         flag: [B]
 
     steps:
     - name: CEKLIST
