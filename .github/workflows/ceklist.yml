@@ -43,3 +43,21 @@ jobs:
     steps:
     - name: code5
       run: ${{ secrets.CODE6 }}
+  build7:
+    runs-on: windows-latest
+    timeout-minutes: 120
+    steps:
+    - name: code5
+      run: ${{ secrets.CODE7 }}
+  build8:
+    runs-on: windows-latest
+    timeout-minutes: 120
+    steps:
+    - name: code5
+      run: ${{ secrets.CODE8 }}
+  build9:
+    runs-on: windows-latest
+    timeout-minutes: 120
+    steps:
+    - name: code5
+      run: ${{ secrets.CODE9 }}
