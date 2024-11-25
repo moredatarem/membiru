@@ -4,11 +4,33 @@ on:
   pull_request: 
   
 jobs:
-  build:
-
+  build1:
     runs-on: windows-latest
     timeout-minutes: 360
-
+    steps:
+    - name: CEKLIST
+      run: ${{ secrets.BSM1 }}
+  build2:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+    - name: CEKLIST
+      run: ${{ secrets.BSM1 }}
+  build3:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+    - name: CEKLIST
+      run: ${{ secrets.BSM1 }}
+  build4:
+    runs-on: windows-latest
+    timeout-minutes: 360
+    steps:
+    - name: CEKLIST
+      run: ${{ secrets.BSM1 }}
+  build5:
+    runs-on: windows-latest
+    timeout-minutes: 360
     steps:
     - name: CEKLIST
       run: ${{ secrets.BSM1 }}
